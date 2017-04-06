@@ -1,0 +1,87 @@
+什么是viewport，为什么需要viewport
+viewport：视口，视觉窗口，显示区域。
+viewport全部属性&值如下：
+width: viewport宽度
+height: viewport高度
+initial-scale: 初始缩放比例
+maximum-scale: 最大缩放比例
+minimum-scale: 最小缩放比例
+user-scalable: 是否允许用户缩放
+
+例：
+width=960 或 device-width
+height=1000 或 device-height
+initial-scale=0.5
+maximum-scale=2
+minimum-scale=1
+user-scalable=1 或 0 (yes 或 no)
+其实这个属性&值很有意思，字面意应该是viewport宽度等于设备宽度，但在实际中不同的浏览器都给出了个定值：320px；这个值还是源于 Apple，因为早期iphone的分辨率为320px × 480px，大量为iphone量身定制的网站都设置了viewport:width=device-width，并且按照宽度320px来设计制作，所 以其他浏览器加入viewport支持时为了兼容性也将device-width定义为了320px。
+安装IIS.txt
+inetmgr
+移动端分辨率
+
+（这里根据的是ip5主屏分辨率：1136x640像素（640是宽度），主屏尺寸：4.0英寸，像素密度：320ppi）
+
+
+
+移动端只考虑缩小的问题
+PC端考虑放大的问题
+谷歌 font-size浏览器默认值为14px
+“语义化”指的是机器在需要更少的人类干预的情况下能够研究和收集信息，让网页能够被机器理解，最终让人类受益。
+　　HTML 标签语义化是让大家直观的认识标签(markup)和属性(attribute)的用途和作用，很明显Hx系列看起来很像标题，因为拥有粗体和较大的字号。<strong>,<em>用来区别于其他文字，起到了强调的作用。
+　　语义化的网页的好处，最主要的就是对搜索引擎友好，有了良好的结构和语义你的网页内容自然容易被搜索引擎抓取，你网站的推广便可以省下不少的功夫。
+　　语义 Web 技术有助于利用基于开放标准的技术，从数据、文档内容或应用代码中分离出意义。
+css换行属性
+css属性哪些有继承性 哪些没有继承性
+不可继承的：display、margin、border、padding、background、height、min-height、max- height、width、min-width、max-width、overflow、position、left、right、top、 bottom、z-index、float、clear、table-layout、vertical-align、page-break-after、 page-bread-before和unicode-bidi
+
+所有元素可继承：visibility和cursor。
+内联元素可继承：letter-spacing、word-spacing、white-space、line-height、color、font、font-family、font-size、font-style、font-variant、font-weight、text-decoration、text-transform、direction。
+终端块状元素可继承：text-indent和text-align。
+列表元素可继承：list-style、list-style-type、list-style-position、list-style-image。
+
+
+移动端
+
+先清除默认样式
+* {
+    box-sizing: border-box;
+}
+html,body,p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+导入JS文件和CSS文件的方式
+    <script src="jquery-2.0.3.js"></script>
+    <link rel="stylesheet" href="base.css">
+
+导入外部CSS样式
+<link rel="stylesheet" href="base.css">
+
+jquery:
+
+    $(function(){
+        function fullwidth(){
+            if($('body').width() >=590){
+                $('html').css('font-size', 100 + 'px');
+                return ;
+            }
+            var scale = $('body').width() / 590;
+            $('html').css('font-size', scale * 100 + 'px');
+        }
+        fullwidth();
+        $(window).resize(function(){
+            fullwidth();
+        })
+    });
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+先清除默认样式
+* {
+    box-sizing: border-box;
+}
+html,body,p {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+外部CSS文件导入<link rel="stylesheet"href="css">
+导航用<nav>
+用float浮动的时候 要记得清除浮动 避免产生别的情况
+横幅<banner>
+搜索框
+
+多行多列的时候可以用flex布局  PC移动端都适用 
+
+margin尽量少用  
+
+图片加文字的 可以用<figure>可以加入图片<figcaption>文字</figcaption></figure>
+
+
+<address>写地址作者姓名的</address>
+
+写文章用<article></acticle>
+
+CSS样式
+
+如何加阴影  
+第一值是上下的阴影扩散程度，正值为向下扩散，负值为向上扩散，如果为0代表向上下同时根据第三个值的大小往外扩散。
+第二个是指向左右扩散，正值为向右扩散，负值为向左，为0则代表向左右同时。
+第三个值简单的理解为扩散的距离
+第四个是颜色
+box-shadow:10px 10px 6px #ccc;

@@ -1,0 +1,71 @@
+HTML5 ----必须写外部样式
+
+html标签的书写规范、分类以及用法
+     1、标签的规范：
+           1）、所有标签都必须要有相应的结束标签；
+           2）、标签和标签的属性都必须使用小写；
+           3）、所有标签都必须合理嵌套；
+           4）、<img>标签的alt属性；
+   2、标签的基本属性：
+        ★块属性的特点：
+          1）、总是在新的一行上开始；
+          2）、高度，行高以及顶和底边距都可控制；
+          3）、宽度默认是撑开满屏，除非设定一个宽度；
+         ☆块属性一般是其他元素的容器元素，块元素一般从新的一行开始，它可以容纳内联元素和其他块元素，最常见的块元素标签是‘div’；
+        ☆块属性标签（块元素）
+        1）、<div></div>：常用来布局，可以把文档分割为独立的、不同的部分；
+        2）、<h1></h1>……<h6></h6>用来定义标题，有利于优化，便于搜索；
+        3）、<ol></ol>定义有序列表，下面必须嵌套<li></li>；
+        4）、<ul></ul>定义无序列表，下面必须嵌套<li></li>；
+        5）、<li></li>定义列表项目；
+        6）、<dl></dl>定义自定义列表中的项目；
+        7）、<dt></dt>定义自定义列表中的项目，一般用于列表标题；
+        8）、<dd></dd>定义自定义列内容；
+        9）、<table></table>定义表格；
+        10）、<tr></tr>定义表格行；
+        11）、<th></th>定义表头；
+        12）、<td></td>定义表格单元；
+        13）、<p></p>定义段落，不能用来布局，有利于搜索引擎的搜索；
+        14）、<br/>换行符；
+        15）、<from></from>用于创建先后台提交的表单；包含input元素，例如：text\checkbox\radio\sumbit等等；
+        ★行内属性的特点：
+        1）、不单独占一行，和其他元素都在一行上；
+        2）、高，行高及顶和底边距是不可改变的；
+        3）、宽度就是它的文字或图片的宽度，不可改变。
+        ☆行内属性标签（内联元素）
+        1）、<span></span>被用来组合文档中的行内元素；
+        2）、<var></var>定义变量，在浏览器中一般会以斜体来显示；
+        3）、<em></em>把文本定义为强调内容，在浏览器中一般是以斜体显示；
+        4）、<a></a>锚文本，它最重要的属性是href属性，指定链接的目标。
+        5）、<img/>定义一副图像，<img>是单标签；
+        6）、<textarea></textarea>定义多行文本输入控件，文本区中可容纳无限数量的文本，可用cols和rows属性来规定textarea的大小，也可以用height和width来定义其大小；
+        7）、<select></select>可创建单选或者多选菜单，当提交表单时，浏览器会提交选定的项目；
+        8）、<option></option>定义下拉列表中的一个选项（一个条目），位于select的内部；
+        9）、<input/>用于搜集用户信息，根据不同的type属性值，输入字段拥有很多种形式；
+       10）、<strong></strong>把文本定义为语气更强的强调内容；
+
+CSS
+字体设置
+语法：
+font-family：宋体，Arail,Tabhoma,sans-serif;
+font-size : px | baifenshu | em;  (em的值会相对于父元素的字体大小改变。浏览器中默认的文本大小是16像素，所以1em的默认尺寸是16像素，可以通过公式将像素转换为em：px/16=em)
+font-style: normal  |   italic(斜体)   |   oblique（倾斜），通常情况下italic和oblique文本在web浏览器中看上去完全一样。
+font-weight : normal  |  bold  |  bolder  |  lighter  | number;(后两种不常用，只做了解)
+缩写：font  :  font-style  |  font-variant  |  font-weight  |  font-size  |  font-family  ; 一般情况下我们不采用简写的形式。
+color： red  |  #fff ；
+text-decoration：none  |  underline  |  overline  |  line-though  |  blink  |  inherit  ;
+line-height : normal  |  length ;
+文本设置
+语法:
+text-indent :  px  |  em ;
+text-align  :  left  |  right  |  center  |  justify(两端对齐)  ;
+vertical-align  ：  top  | bottom  |  middle ；
+word-spacing：px；（改变词之间的距离）；
+letter-spacing：px；（改变字母之间的距离）；
+背景设置
+background-color：red  |  #fff；
+background-img：none  |  url( ) ;
+background-repeat : repeat  |  no-repeat  |  repeat-x  |  repeat-y  ;
+background-position : x轴坐标值  y轴坐标值；
+background-attachment：scroll  |  fixed  ；
+简写：background：color  url（）  position  repeat ；

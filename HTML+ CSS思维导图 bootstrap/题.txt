@@ -1,0 +1,53 @@
+1.自我介绍
+2.盒子模型
+3.清除浮动
+ 方法一：添加新的元素 、应用 clear：both；
+方法二：父级div定义 overflow: hidden；zoom:1;
+    方法三： 据说是最高大上的方法  :after 方法：（注意：作用于浮动元素的父亲）
+    先说原理：这种方法清除浮动是现在网上最拉风的一种清除浮动，他就是利用:after和:before来在元素内部插入两个元素块，从面达到清除浮动的效果。其实现原理类似于clear:both方法，只是区别在于:clear在html插入一个div.clear标签，而outer利用其伪类clear:after在元素内部增加一个类似于div.clear的效果。下面来看看其具体的使用方法：
+.outer {zoom:1;}    /*==for IE6/7 Maxthon2==*/
+.outer :after {clear:both;content:'.';display:block;width: 0;height: 0;visibility:hidden;}   /*==for FF/chrome/opera/IE8==*/
+    其中clear:both;指清除所有浮动；content: '.'; display:block;对于FF/chrome/opera/IE8不能缺少，其中content（）可以取值也可以为空。visibility:hidden;的作用是允许浏览器渲染它，但是不显示出来，这样才能实现清楚浮动。
+
+4.哪些元素有继承性
+不可继承的：display、margin、border、padding、background、height、min-height、max-height、width、min-width、max-width、overflow、position、left、right、top、bottom、z-index、float、clear、table-layout、vertical-align、page-break-after、page-bread-before和unicode-bidi。
+所有元素可继承：visibility和cursor。
+内联元素可继承：letter-spacing、word-spacing、white-space、line-height、color、font、font-family、font-size、font-style、font-variant、font-weight、text-decoration、text-transform、direction。
+终端块状元素可继承：text-indent和text-align。
+列表元素可继承：list-style、list-style-type、list-style-position、list-style-image。
+
+5.CSS3里的新属性
+border-radius 
+font-effect专门制定文字效果属性 
+ 专门制定文字效果属性 text-underline-style            text-underline-color            text-underline-mode            text-underline-position
+
+增加了标记的功能 font-emphasize-style             
+font-emphasize-posintion
+边框：(Borders)
+
+6.垂直居中的几个方法
+
+7.flex布局
+在布局中出现多行多列的文字和图片是，使用flex布局会期待事半功倍的效果，而在但行或者行内元素比较单一的时候则不适用flex布局,用float就行
+
+8.rem方案
+在W3C官网上是这样描述rem的——“font size of the root element” 
+rem是相对于根元素<html>，这样就意味着，我们只需要在根元素确定一个参考值，
+
+9.<meta name="viwport" content="width=device-width">是什么意思
+这里 的 名字 是 viewport （显示窗口）
+数据 是 文本 内容 content="width=device-width, initial-scale=1.0"
+也就是 显示窗口 宽度 是 客户端的 屏幕 宽度 （就是 满屏 ！），显示的文字和图形的初始比例 是 1.0
+
+10.2D和3D相比有什么区别
+2D和3D变化的主要区别是3D变化更着重体现立体感，多出现了观察者的角度，Z轴；其次是2D变化无需在父元素中设置环境，可直接对元素进行设置，而3D变化必须在元素中设置该父元素为3D环境。
+
+11.过渡属性
+通过 CSS3，我们可以在不使用 Flash 动画或 JavaScript 的情况下，当元素从一种样式变换为另一种样式时为元素添加效果。
+CSS3 过渡是元素从一种样式逐渐改变为另一种的效果。
+要实现这一点，必须规定两项内容：
+· 规定您希望把效果添加到哪个 CSS 属性上
+· 规定效果的时长
+如需向多个样式添加过渡效果，请添加多个属性，由逗号隔开：
+
+12.了解服务器是怎么运行的
