@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+ 
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+<link rel="stylesheet" type="text/css" href="css/base.css" />
+	<title>这个一个sina练习</title>
+	</head>
+	<body style="background: url(http://demo.ycku.com/blog/images/bg3.jpg) repeat-x rgb(226,226,226); ">
+		<div id="screen"></div>	<!--遮罩层-->
+
+		<div class="top">
+			<ul >
+				<li class="menu" style="float:right;">
+					<a href="#">个人中心</a>
+					<ul class="menu-list"  >
+						<li><a href="#">发布文章</a></li>
+						<li><a href="#">更换皮肤</a></li>
+						<li><a href="#">我的帮助</a></li>
+						<li><a href="#">退出登录</a></li>
+					</ul>
+				</li>
+				<li class="reg" style="float:right"><a href="#">注册</a></li>
+				<li class="login" style="float:right"><a href="#">登录</a></li>
+			   <li style="float:right"  class="info"></li>
+            <div class="clr"></div>
+			</ul>
+		</div>
+		<!--登录的弹出框-->
+		<div id="login" >
+			<h2><img src="img/close.png" class="close"/>网站登录</h2>
+			<form name="login">
+				<div class="info"></div>
+				<div class="user">账号:<input type="text" name="user" class="text"/></div>
+				<div class="pass">密码:<input type="password" name="pass" class="text"/></div>
+				<div class="button"><input type="button" name="sub" class="submit" value=""/>点击登录	</div>	
+				<div class="other">注册新用户|忘记密码?</div>
+			</form>
+		</div>
+		<!--注册按钮点击的弹出框-->
+		<div id="reg">
+			<h2><img src="img/close.png" class="close"/>会员注册</h2>
+			<form name="reg">
+				<dl>
+					<dd>用户名:<input type="text" name="user" class="text"/>
+					<span class="info inf_user">请输入用户名，2~20位，由字母、数字和下划线组成！</span>
+					<span class="error error_user">输入不合法，请重新输入！</span>
+					<span class="succ succ_user">可以使用</span>
+					<span class="loading">正在检测用户名...</span>
+					
+					</dd>
+					<dd>密 码:<input type="password" name="pass" class="text"/>
+					<span class="info info_pass">
+						<p>安全级别：
+							<span class="s s1">■</span>
+							<span class="s s2">■</span>
+							<span class="s s3">■</span> 
+							<span class="s s4" style="font-weight:normal;">■</span>
+						</p>
+						<p><span class="q1" style="font-weight:normal;">○</span>6-20 个字符</p>
+						<p> <span class="q2" style="font-weight: normal;">○</span> 只能包含大小写字母、数字和非空格字符</p>
+						<p><span class="q3" style="font-weight: normal;"> ○</span>大、小写字母、数字、非空字符，2种以上</p>
+					</span> 
+					<span class="error error_pass">输入不合法,请重新输入</span>
+					<span class="succ succ_pass">输入成功,可以使用</span>
+				 </dd>
+				<dd>密码确认:<input type="password" name="notepass" class="text"/>
+				<span class="info info_notepass">请再次输入密码</span>
+				<span class="error error_notepass">密码不一致,请在你输入!</span>
+				<span class="succ succ_notepass">密码乐意使用</span>
+				</dd>
+				<dd ><span style="vertical-align: 2px;">提问:</span><select name="ques">
+					<option value="0">------请选择-----</option>
+					<option value="1">------请选择1-----</option>
+					<option value="2">------请选择2-----</option>
+					<option value="3">------请选择3-----</option>
+					<option value="4">------请选择4-----</option>
+				</select>
+					<span class="error error_ques">必须选择</span>
+					
+				</dd>
+				<dd>回答:<input type="text" name="ans" class="text"/>
+				<span class="info info_ans">请输入回答,2~32位</span>
+				<span class="error error_ans">回答错误</span>
+				<span class="succ succ_ans">回答正确</span>
+				</dd>
+				<dd>电子邮件:<input type="text" name="email" class="text"/>
+				<span class="info info_email">请输入电子邮件</span>
+				<span class="error error_email">邮件不合法,请重新修护乳</span>
+				<span class="succ succ_email">就是这个邮箱</span>
+				<ul class="all_email">
+					<li><span></span>@qq.com</li>
+					<li><span></span>@163.com</li>
+					<li><span></span>@sohu.com</li>
+				    <li><span></span>@sohu.com</li>
+					<li><span></span>@sohu.com</li>
+				</ul>
+				</dd>
+				<dd class="birthday"><span style="vertical-align: -2px;">生日:</span>
+					<select name="year"> <option value="0">-年-</option></select>
+					<select name="month"><option value="1">-月-</option></select>
+					<select name="day"><option value="2">-日-</option></select>
+					<span class="error error_birthday">尚未全部选择，请选择！</span>
+					
+				</dd>
+				<dd style="height: 105px;"><span style="vertical-align: 85px;">备注:</span>
+					<textarea name="ps"></textarea>
+				</dd>
+				<dd style="display: block;" class="ps">还可以输入<strong class="num">200</strong>字</dd>
+				<dd style="display: none;" class="ps">已超过<strong class="num"></strong>字<span class="clear">清尾</span></dd>
+				<dd style="padding: 0 0 0 80px;"><input type="button" name="sub" class="submit"/></dd>
+			</dl>
+			</form>
+			
+		</div>
+			<!--发表博文的弹出框-->
+		<div id="blog">
+			<h2><img src="img/close.png" alt="" class="close"/>发表博文</h2>
+			<div class="info">
+				<form name="blog">
+					<dl>
+						<dd>标题:<input   type="text" name="title" class="text"/>
+							(*不能为空)
+						</dd>
+						<dd style="padding: 10px 0 0 86px;"><input name="sub" type="button" class="submit"></dd>
+					</dl>
+				</form> 
+				
+			</div>
+		</div>
+		  <!--更换皮肤的弹出框-->
+    <div id="skin">
+        <h2><img src="img/close.png" alt="" class="close" />更换皮肤</h2>
+        <div class="skin_bg">
+        </div>
+     </div>
+		   <!--网站导航-->
+         <div id="nav">
+         	<ul class="about">
+         		<li></li>
+         		<li></li>
+         		<li></li>
+         		<li></li>
+         		<li></li>
+         	</ul>
+         	<ul class="black">
+         		<li>首页</li>
+         		<li>博文列表</li>
+         		<li>精彩相册</li>
+         		<li>动感音乐</li>
+         		<li>关于我们</li>
+         	</ul>
+         	
+         	<div class="nav_bg">
+         		<ul class="white">
+	         		<li>首页</li>
+	         		<li>博文列表</li>
+	         		<li>精彩相册</li>
+	         		<li>动感音乐</li>
+	         		<li>关于我们</li>
+         		</ul>
+         	</div>
+         </div>
+	
+      
+         <!--网站主题-->
+         <div id="main">
+         	<div id="sidebar">
+			<h2>教育博文1</h2>
+			<ul>
+			 	<li><a href="###">这个是一条新闻1</a></li>
+			    <li><a href="###">这个是一条新闻2</a></li>
+				<li><a href="###">这个是一条新闻3</a></li>
+				<li><a href="###">这个是一条新闻4</a></li>
+				<li><a href="###">这个是一条新闻5</a></li>
+
+			</ul>
+				<h2>教育博文2</h2>
+			<ul>
+			 	<li><a href="###">这个是一条新闻1</a></li>
+			    <li><a href="###">这个是一条新闻2</a></li>
+				<li><a href="###">这个是一条新闻3</a></li>
+				<li><a href="###">这个是一条新闻4</a></li>
+				<li><a href="###">这个是一条新闻5</a></li>
+			</ul>
+				<h2>体育博文</h2>
+			<ul>
+			 	<li><a href="###">这个是一条新闻1</a></li>
+			    <li><a href="###">这个是一条新闻2</a></li>
+				<li><a href="###">这个是一条新闻3</a></li>
+				<li><a href="###">这个是一条新闻4</a></li>
+				<li><a href="###">这个是一条新闻5</a></li>
+
+			</ul>
+				<h2>娱乐博文</h2>
+			<ul>
+			 	<li><a href="###">这个是一条新闻1</a></li>
+			    <li><a href="###">这个是一条新闻2</a></li>
+				<li><a href="###">这个是一条新闻3</a></li>
+				<li><a href="###">这个是一条新闻4</a></li>
+				<li><a href="###">这个是一条新闻5</a></li>
+
+			</ul>
+         	</div>
+         	<div id="index">
+         		
+         	</div>
+        
+         <!--轮播器-->
+          <div id="banner">
+            <img src="img/banner1.jpg" alt="轮播器第一张" class="imgs"/>
+            <img src="img/banner2.jpg" alt="轮播器第二张" class="imgs"/>
+            <img src="img/banner3.jpg" alt="轮播器第三张" class="imgs"/>
+            <ul>
+                <li>●</li>
+                <li>●</li>
+                <li>●</li>
+            </ul>
+            <span></span>
+            <strong></strong>
+        </div>
+         <div id="photo">
+         	<dl>
+         		<dt><img xscr="img/p1.jpg" bigsrc="img/p1big.jpg" src="img/p1.jpg" class="=wait_load" alt=""/></dt>
+         		<dd>延迟加载图片</dd>
+         	</dl>
+         		<dl>
+         		<dt><img xscr="img/p1.jpg" bigsrc="img/p1big.jpg" src="img/p1.jpg" class="=wait_load" alt=""/></dt>
+         		<dd>延迟加载图片</dd>
+         	</dl>
+         		<dl>
+         		<dt><img xscr="img/p1.jpg" bigsrc="img/p1big.jpg" src="img/p1.jpg" class="=wait_load" alt=""/></dt>
+         		<dd>延迟加载图片</dd>
+         	</dl>
+         		<dl>
+         		<dt><img xscr="img/p1.jpg" bigsrc="img/p1big.jpg" src="img/p1.jpg" class="=wait_load" alt=""/></dt>
+         		<dd>延迟加载图片</dd>
+         	</dl>
+         		<dl>
+         		<dt><img xscr="img/p1.jpg" bigsrc="img/p1big.jpg" src="img/p1.jpg" class="=wait_load" alt=""/></dt>
+         		<dd>延迟加载图片</dd>
+         	</dl>
+         </div>
+         <!--底部说明-->
+         <div id="footer">
+         	<p>这个是底部说明</p>
+         	<p>一个急于求成的人,一定会在比人的成功中迷失自我</p>
+         </div>
+     </div>
+           <!--图片预加载大图弹出框-->
+    <div id="photo_big">
+        <h2><img src="img/close.png" alt="" class="close" />图片预加载</h2>
+        <div class="big">
+            <img src="img/loading.gif" alt="" />
+            <strong class="sl">&lt;</strong>
+            <strong class="sr">&gt;</strong>
+            <span class="left"></span>
+            <span class="right"></span>
+            <em class="index"></em>
+        </div>
+    </div>
+    <!--加载弹出框-->
+    <div id="loading">
+        <p>加载中</p>
+    </div>
+    <!--成功弹出框-->
+    <div id="success">
+        <p>成功</p>
+    </div>
+<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+    <script type="text/javascript" src="js/tool.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript" src="js/ajax.js"></script>
+    <script type="text/javascript" src="js/json2.js"></script>
+    <script type="text/javascript" src="js/base_drag.js"></script>
+    <script type="text/javascript" src="js/base_form.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/indexs.js"></script>
+   
+	</body>
+</html>

@@ -1,0 +1,123 @@
+/*我的*/
+#header{
+	height: 68px;
+	width: 100%;
+	background: purple;
+
+}
+#header .title{
+	color: white;
+	text-align: center;
+	 padding-top: 20px;
+	font: 14;
+	
+}
+#header button{
+ 
+	border: none;
+	right: 20px;
+	 margin-top: -40px;
+	 width: 35px;
+	 height: 35px;
+	 position: absolute;
+	background: url(../img/icon_abnormal.png) no-repeat;
+}
+/*个人图片*/
+#personerMsg{
+	height: 260px auto;
+	width: 100%;
+	background: purple;
+	text-align: center;
+		color: white;
+		font-weight: 200;
+}
+ #personerMsg .grade p{
+ 	text-align: center;
+ 	background-color: white;
+ 	color: black;
+ 	border-radius: 10px;
+ 	width: 120px;
+ 	display: inline-block;
+ 	/*margin-left: 49%;*/
+ 	/*position: relative;*/
+ }
+ .imgBtn{
+ 	border: none;
+	width: 70px;
+	height: 70px;
+	border-radius: 35px;
+	background : url(../img/图层-0.png);
+	background-size: cover;
+
+}
+.phone{
+	text-align: center;
+	margin-top: 0px;
+	
+}
+.grade{
+	text-align: center;
+	margin-top:  -15px;
+}
+
+#personerMsg ul li{
+	height: 60px;
+	width: 32%;
+	display: inline-block;
+}
+
+.money p{
+margin-top:-10px ;
+}
+/*选项列表*/
+#list_item{
+	margin-top: -20px;
+	height: 380px;
+	width: 100%;
+	background: white;
+	text-align: center;
+	display: inline-block;
+
+}
+#list_item div img{
+	text-align: center;
+	height: 40px;
+	width: 40px;
+	line-height: 40px;
+	margin-top:20px ;
+}
+#list_item div  p{
+	margin-top: -10px;
+}
+#list_item ul li{
+	height:120px;
+	width: 31%;
+	display: inline-block;
+	border: 1px solid;
+	margin-top: -1px;
+	margin-left: -6px;
+ 
+
+}
+ 
+ 
+#list_item div{
+	line-height: 35px;
+}
+div .right{
+	
+}
+/*底部按钮tabber*/
+#footer{
+	height: 40px;
+	width: 100%;
+	background: palevioletred;
+}
+#footer ul li {
+	text-align: center;
+	width: 32%;
+	height: 20px;
+	color: white;
+	line-height: 15px;
+	display: inline-block;
+}

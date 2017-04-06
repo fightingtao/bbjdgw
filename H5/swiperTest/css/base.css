@@ -1,0 +1,42 @@
+
+
+div{
+	/*display: inline-block;*/
+		/*float: left;*/
+		    text-align: center;
+}
+#images{
+	text-align: center;
+	border-color: #000000;
+	width: 380px;
+	background-color: greenyellow;
+/*float: c;*/
+}
+img{
+	 
+		margin: 0px ;
+		background-color: red;
+		padding: 10px;
+		border-radius:10px ;
+		border: 3px solid #007AFF;
+
+		/*position: relative;*/
+		height:90%;
+   		width: 90%;
+}
+.image1,.image2,.image3,.image4,.image5{
+			
+			/*float: left;*/
+			margin-top: 40px;
+			width: 200px
+			/*left:100px;*/
+			position: relative;
+			 height: 190px;
+}
+.swiper-container {
+    width: 60%;
+    height: 300px;
+
+
+}  
+ 

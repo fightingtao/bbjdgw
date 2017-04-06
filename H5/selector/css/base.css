@@ -1,0 +1,14 @@
+a[href^="href"]{
+	background: url();
+	background: url(../img/图层-0.png);
+	 padding-left: 10px;
+	 color: red;
+}
+#hover{
+	width: 100px;
+	height: 100px;
+	background-color: red;
+}
+#hover:hover{
+	background: #e3e3e3;
+}

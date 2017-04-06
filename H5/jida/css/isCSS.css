@@ -1,0 +1,89 @@
+#header{
+    text-align:center;
+    margin-top: 15px;
+}
+
+body{
+    font: 12px arial;
+    background: url("../images/bg.jpg");
+    background-size: cover;
+
+}
+
+#header a{
+    color: #333;
+    font-size: 13px;
+    font-weight: bolder;
+    margin-right: 15px;
+}
+
+#header a.no-weight{
+    font-weight: normal;
+}
+
+#header a.more-product{
+    background-color: #38f;
+    display: inline-block;
+    width: 66px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+}
+
+#main{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 250px;
+}
+
+#main img{
+    width: 270px;
+    height: 129px;
+}
+
+#main input{
+    width: 500px;
+    height: 22px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    outline: none;
+}
+
+#main a{
+    background-color: #38f;
+    display: inline-block;
+    width:100px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #2d78f4;
+    /*box-shadow: 1px 1px 1px #ddd;*/
+    margin-left: -4px;
+}
+
+#footer{
+    text-align: center;
+}
+
+#footer .footer-top a{
+  margin-left: 5px;
+  margin-right: 5px;
+  color: #00c;
+}
+
+#footer img{
+    width: 14px;
+    height: 17px;
+}
+
+#footer .footer-bottom{
+    color: #666;
+}
+
+#footer .footer-bottom a{
+    color: #666;
+}

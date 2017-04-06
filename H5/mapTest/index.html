@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>练习地图</title>
+		<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+		<script type="text/javascript" src="js/map.js" ></script>
+	 <link rel="stylesheet" type="text/css" href="css/animate.min.css"/>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/basis.css"/>
+    <link rel="shortcut icon" href="icon_img.ico">
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/respond.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/jquery.sidr.min.js"></script>
+
+		<style>
+			.title{
+				text-align: center;
+				margin-top:40px ;
+				font-size: 17;
+				font-family: "微软雅黑";
+			}
+			.list{
+				text-align: center;
+				text-decoration: none;
+				font-family: "微软雅黑";
+				font-size: 17;
+				margin-top: 40px;
+				padding-top: 20px;
+				background-color: red;
+			}
+			li{
+				display: list-item;
+			}
+			.fr{
+				float: right;
+			}
+			.clearfix:after{
+				visibility: hidden;
+				display: block;
+				font-size: 0;
+				content: "  ";
+				clear: both;
+				height: 0;
+				
+			}
+			.clearfix{
+				*zoom: 1;
+			}
+			.nav-box{
+				padding: 10px 15px;
+			}
+			.logo img{
+				height: 50px;
+				width: auto;
+			}
+			.nav-logo{
+				margin: 10px;
+			}
+			.xs-nav{
+				height: 100%;
+				background: #fff;
+				position: fixed;
+				right: -200px;
+				top: 0;
+				width: 200px;
+				overflow: hidden;
+				/*display: none;*/
+			}
+			.xs-nav ul{
+				padding: 10px 0;
+			
+			}
+			.xs-nav a{
+				display: block;
+				border-bottom: 1px #A49BF8 solid;
+				height: 40px;
+				line-height: 40px;
+				padding-left: 5px;
+				color: #A49BF8;
+				padding: 0 25px;
+				font-size: 15px;	
+			}
+			.d-nav li{
+				float: left;
+			}
+			.d-nav a{
+				display: block;
+				height: 80px;
+				line-height: 80px;
+				padding: 0 13px;
+			}
+			.d-nav li  a{
+				color: #999999;
+				text-decoration: none;
+				display: block;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<nav class="fr ">
+					<div class="nav-logo hidden-lg hidden-sm hidden-md" id="left-menu">
+						<img src="img/nav.png"/>
+					</div>
+					<ul class="hidden-xs d-nav clearfix wow fadeInRight">
+						<li class="dq"><a href="index.html" style="color: #502d78">首页</a></li>
+						<li><a href="#">邦办达人</a></li>
+						<li><a href="#">邦办商家</a></li>
+						<li><a href="#">关于邦办</a></li>
+						<li><a href="#">联系我们</a></li>
+					</ul>
+					<div class="clearfix xs-nav" id="sidr-left">
+						<ul>
+							<li class="dq"><a href="index.html" style="color: #502d78">首页</a></li>
+							<li><a href="#">邦办达人</a></li>
+							<li><a href="#">邦办商家</a></li>
+							<li><a href="#">关于邦办</a></li>
+							<li><a href="#">联系我们</a></li>
+						</ul>
+					</div>
+				</nav>
+				
+		<!--<div class="title animated fadeInDownBig">
+			<a>这个是按钮</a>
+		<input  id="btn"   type="button" onclick="showPosition()" value="text" style="align-items: auto;" />
+		</div>
+		<div class="list animated rotateInUpRight">
+			<a href="#">旋转吧小陀螺</a>
+		</div>-->
+	</body>
+	<script>
+		$(function(){
+
+    $('.fr li').click(function(){
+        $(this).addClass('cur').siblings().removeClass('cur');
+        $(this).addClass('ah').siblings().removeClass('ah');
+    })
+})
+		
+	</script>
+</html>

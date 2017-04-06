@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>swiper搞起</title>
+		<script src="http://cdn.bootcss.com/jquery/3.1.1/jquery.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.1.min.js" ></script>
+		<script type="text/javascript" src="js/base.js" ></script>
+		<link rel="stylesheet" href="css/swiper-3.4.1.min.css" />
+		<link rel="stylesheet" href="css/base.css" />
+	</head>
+	<body>
+	<div id="images" class="swiper-container">
+			<div class="swiper-wrapper carousel">
+				<div class="image1 swiper-slide">
+				<img src="img/0.jpg" alt="这个是图片1" />
+
+			</div>
+			<div class="image1 swiper-slide" data-history="www.baidu.com">
+				<img src="img/1.jpg" alt="这个是图片1" />
+
+			</div>
+				<div class="image2 swiper-slide">
+				<img src="img/001.jpg" alt="这个是图片1" />
+			</div>
+				<div class="image3 swiper-slide">
+				<img src="img/s4.jpg" alt="这个是图片1" />
+			</div>
+			<div class="image4 swiper-slide">
+				<img src="img/twomm.jpg" alt="这个是图片1" />
+			</div>
+			<div class="image5 swiper-slide">
+				<img src="img/war.jpg" alt="这个是图片1" />
+			</div>
+			</div>
+		<div class="swiper-scrollbar"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+		</div>
+	</body>
+	<script>        
+	  var mySwiper = new Swiper ('.swiper-container', {
+	    direction: 'horizontal',//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)。
+	    loop: true,
+	    
+	    // 如果需要分页器
+	    pagination: '.swiper-pagination',
+	    
+	    // 如果需要前进后退按钮
+	    nextButton: '.swiper-button-next',
+	    prevButton: '.swiper-button-prev',
+	    
+	    // 如果需要滚动条
+	    scrollbar: '.swiper-scrollbar',
+	    effect : 'cube',//切换效果
+	    autoplay : 3000,
+        speed:300,
+//grabCursor : true,
+//parallax : true,
+//    autoHeight: true, //高度随内容变化
+	  })        
+  </script>
+  
+</html>
