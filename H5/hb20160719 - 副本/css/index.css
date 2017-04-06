@@ -1,0 +1,321 @@
+@charset "utf-8";
+html {
+	background: rgba(250, 250, 250, 1);
+}
+
+.demo {
+	position: relative;
+	opacity: 1;
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+
+.grid {
+	position: relative;
+	/* fluffy */
+	margin: 0 auto;
+	width: 100%;
+	/* end fluffy */
+}
+
+.grid-item {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* fluffy */
+	width: 160px;
+	height: auto;
+}
+
+.grid-item1 {
+	background: white;
+	width: 160px;
+	height: auto;
+	border-radius: 10px;
+	display: block;
+}
+
+.notetitle {
+	position: relative;
+	bottom: 10px;
+	display: inline-block;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	font-weight: 300;
+	width: 100px;
+	/*对宽度的定义,根据情况修改*/
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.grid-item img {
+	width: 160px;
+	height: auto;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.face {
+	display: inline-block;
+	width: 40px !important;
+	height: 40px !important;
+	margin-left: 5%;
+}
+
+
+/**
+ * 头部
+ */
+
+.userType {
+	width: 100%;
+	background: white;
+	height: 50px;
+}
+
+#userType {
+	width: 70px;
+	height: 30px;
+	border: none;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	margin-left: -35px;
+	margin-top: 10px;
+	outline: none;
+}
+
+.isfree {
+	width: 100%;
+	height: 40px;
+}
+
+.isfree div {
+	width: 49%;
+	display: inline-block;
+	background: #F1F0F5;
+	font-size: 14px;
+	font-family: "微软雅黑";
+	font-weight: 200;
+	padding-top: 11px;
+	text-align: center;
+}
+
+.isfree div button {
+	width: 50px;
+}
+
+.isfree button {
+	outline: none;
+	border: none;
+	padding: 1%;
+	border-radius: 7px;
+	background: #F1F0F5;
+}
+
+.isfree .current {
+	background: #95CE41;
+	color: white;
+}
+
+.zz2 {
+	display: none;
+	background: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 999999999;
+}
+
+.zz2 .loader3 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -35px;
+	margin-left: -35px;
+}
+
+@media only screen and (min-width: 416px) and (max-width: 640px) {
+	.grid-item,
+	.grid-item1 {
+		width: 200px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 200px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 413px) and (max-width: 423px) {
+	.grid-item,
+	.grid-item1 {
+		width: 195px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 195px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 412px) {
+	.grid-item,
+	.grid-item1 {
+		width: 175px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 175px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 374px) {
+	.grid-item,
+	.grid-item1 {
+		width: 168px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 168px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 320px) {
+	.grid-item,
+	.grid-item1 {
+		width: 120px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 120px;
+		height: auto;
+	}
+}
+
+
+/**
+ * 个人主页css
+ */
+
+.top {
+	width: 100%;
+	margin: 0 auto;
+	height: 276px;
+	background: url(../img/banner.png) no-repeat center;
+	background-size: cover;
+}
+
+.userhead {
+	width: 100%;
+	padding-bottom: 1%;
+	text-align: center;
+}
+
+.userhead img {
+	width: 27%;
+	margin: 0 auto;
+	margin-top: 6%;
+	border-radius: 50%;
+	box-shadow: 0 0 3px 7px #A3D55B, 0 0 5px 5px #FFFFFF;
+}
+
+.userinfo {
+	text-align: center;
+	color: #FFFFFF;
+}
+
+.isvip,
+.name,
+.sex,
+.age {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.isvip {
+	width: 9%;
+}
+
+.sex {
+	width: 7.5%;
+}
+
+.fans {
+	font-weight: 100;
+	padding-top: 3%;
+	padding-bottom: 3%;
+}
+
+.asign {
+	font-size: 14px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.current2 {
+	color: #99D048;
+	border-radius: 0px !important;
+	border-bottom: 1px solid #99D048 !important;
+}
+
+.take {
+	width: 30% !important;
+	position: absolute;
+	top: 10px;
+	right: -3%;
+}
+
+.pagenum {
+	width: 30% !important;
+	background: url(../img/pagenum.png) no-repeat;
+	background-size: 100% 130%;
+	position: absolute;
+	top: 10px;
+	right: -3%;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+	padding: 2%;
+	font-size: 12px;
+	font-weight: 100;
+}
+.footfixed{
+	position: fixed;
+	bottom: -5px;
+	
+}
+.footfixedimg{
+	position: fixed;
+	bottom: -5px;	
+}
+.footfixedimg img{
+	width: 100%;
+}
+.footimg{
+	width: 100%;
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1920px) {
+	.top {
+		width: 100%;
+		margin: 0 auto;
+		height: auto;
+		background: url(../img/banner.png) no-repeat;
+		background-size: 100%;
+	}
+	body {
+		background: rgb(255, 255, 255);
+		position: absolute;
+		left: 50%;
+		margin-left: -360px;
+	}
+}
