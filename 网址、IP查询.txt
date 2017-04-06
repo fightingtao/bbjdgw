@@ -1,0 +1,42 @@
+特效网站
+http://www.html5tricks.com/demo/html5-canvas-fullscreen-background/index8.html
+
+Bootstrap中文文档
+http://v3.bootcss.com/
+
+查看IP地址
+window+r 输入ipconfig 
+
+安装IIS window+r 输入inetmgr 
+
+HTML页面源代码布局介绍
+http://www.cnblogs.com/polk6/archive/2013/05/10/3071451.html
+
+HTML基础菜鸟教程
+http://www.runoob.com/html/html-basic.html
+
+CSS3参考手册
+http://www.css88.com/book/css/
+
+代码快捷方式
+http://docs.emmet.io/cheat-sheet/
+
+W3School
+http://www.w3school.com.cn/tags/html_ref_byfunc.asp
+
+CSS3 动画手册 动画工具
+http://isux.tencent.com/css3/tools.html
+
+贝塞尔曲线
+http://cubic-bezier.com/#.17,.67,.83,.67
+
+
+快速入门
+Less 简介、如何下载并使用、案例等。
+http://less.bootcss.com/
+
+动画可以使用源代码的
+https://daneden.github.io/animate.css/
+
+可以直接使用CSS/JS之类的 ！！（有源代码）
+http://amazeui.org/getting-started
