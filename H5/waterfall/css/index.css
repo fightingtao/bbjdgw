@@ -1,0 +1,165 @@
+@charset "utf-8";
+html {
+	background: rgba(250,250,250,1);
+}
+.demo{
+	position: relative;
+	opacity: 1;
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+.grid{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+}
+.demo .grid .grid-item{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 160px;
+	height: auto;
+}
+
+.grid-item img{
+	width: 160px;
+	height: auto;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+
+.grid-item1{
+	background: white;
+	width: 160px;
+	height: auto;
+	border-radius: 10px;
+	display: block;
+}
+/*头部*/
+.demo .userType{
+	width: 100%;
+	background: white;
+	height: 50px;
+}
+.demo .userType #userType{
+	width: 70px;
+	height: 30px;
+	border: none;
+	line-height: 30px;
+	text-align: center;
+	position: absolute;
+	top: 0%;
+	left: 50%;
+	margin-left: -35px;
+	margin-top: 10px;
+	outline: none;
+}
+.isfree {
+	width: 100%;
+	height: 40px;
+}
+.isfree div {
+	width: 49%;
+	
+	font-family: "微软雅黑";
+	font-size: 14px;
+	display: inline-block;
+	text-align: center;
+	font-weight: 200;
+	padding-top: 11px;
+	background: #F1F0F5;
+}
+.isfree div button {
+	width: 50px;
+}
+.isfree button {
+	outline: none;
+	border: none;
+	padding: 1%;
+	border-radius: 7px;
+	background: #F1F0F5;
+}
+.isfree .current{
+	background: #95CE41;
+	color: white;
+}
+.zz2{
+	display: none;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	z-index: 999999999;
+}
+.zz2 .loader3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -35%;
+	margin-top: -35%;
+}
+/*屏幕适配工作*/
+@media only screen and (min-width: 416px) and (max-width: 640px) {
+	.grid-item,
+	.grid-item1 {
+		width: 200px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 200px;
+		height: auto;
+		background: red;
+	}
+}
+
+@media only screen and (min-width: 413px) and (max-width: 423px) {
+	.grid-item,
+	.grid-item1 {
+		width: 195px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 195px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 375px) and (max-width: 412px) {
+	.grid-item,
+	.grid-item1 {
+		width: 175px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 175px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 321px) and (max-width: 374px) {
+	.grid-item,
+	.grid-item1 {
+		width: 168px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 168px;
+		height: auto;
+	}
+}
+
+@media only screen and (min-width: 300px) and (max-width: 320px) {
+	.grid-item,
+	.grid-item1 {
+		width: 120px;
+		height: auto;
+	}
+	.grid-item img {
+		width: 120px;
+		height: auto;
+	}
+}

@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+body,html{
+	font-family: "微软雅黑";
+	width: 100%;
+	height: auto;
+	max-width: 720px;
+	min-width: 320px;
+	margin: 0 auto;
+	text-align: center;
+}
+img{
+	display: block;
+	draggable:false;
+}
+input[type="button"],
+input[type="submit"],
+input[type="reset"]{
+	-webkit-appearance: none;/*文字下滑线样式*/
+}
+a{
+	text-decoration: none;
+	color: #000;
+}
+.zz{
+	background: rgba(0,0,0,1);
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	opacity: 0.7;
+z-index: 99999999;
+
+}
+.zz .loader3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -35px;
+	margin-right: -35px;
+}
+  
+.loader3{
+	width: 70px;
+	height: 70px;
+	display: inline-block;
+	padding: 0px;
+	text-align: left;
+}
+.loader3 span{
+	position: absolute;
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	background: #77BAE7;
+	-webkit-animation: loader3 1.5s linear infinite;
+	animation: loader3 1.5s linear infinite;
+
+}
+	@keyframes loader3{
+		from{
+			transform: scale(0,0);
+			opacity: 0.8;
+		}
+		to{
+			transform: scale(1,1);
+			opacity: 0;
+		}
+	}
+
+@-webkit-keyframes name{
+	from{
+		-webkit-transform: scale(0,0);
+		opacity: 0.8;
+	}
+	to{
+		-webkit-transform: scale(1,1);
+		opacity: 0;
+	}
+}
+@media screen and (orientation:portrait){
+	.lock_wrp{
+		display: none!important;
+	}
+}
+@-webkit-keyframes iphone{
+	0%{
+		-webkit-transform: rotate(-90deg);
+	}
+	25%{
+		-webkit-transform: rotate(0deg);
+		
+	}
+	50%{
+		-webkit-transform: scaleX(0deg);
+	}
+	75%{
+		-webkit-transform: -90deg;
+	}
+	90%{
+		-webkit-transform: -90deg;
+	}
+}
+.lock_wrp{
+	position: fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	left: 0;
+	top: 0;
+	background-color:#77BAE7 ;
+	color: rgba(255,255,255,0.8);
+	z-index: 999999;
+}
+.lock{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 250px;
+	height: 150px;
+	margin: -75px 0 0 -125px;
+	text-align: center;
+}
+			.lock i {
+				position: relative;
+				display: block;
+			width: 74px;										
+			height: 110px;
+			background: url(../img/iphone.png) 0 0 no-repeat;
+			background-size:100% ;
+			margin: 0 auto;
+			-webkit-transform: rotate(-90deg);
+			-moz-transform: rotate(-90deg);
+			-o-transform: rotate(-90deg);
+			-ms-transform: rotate(-90deg);
+			transform: rotate(-90deg);
+			-webkit-animation: iphone 1.6s ease-in infinite;
+			-moz-animation: iphone 1.6s ease-in infinite;
+			-o-animation: iphone 1.6s ease-in infinite;
+			-ms-animation: iphone 1.6s ease-in infinite;
+			animation: iphone 1.6s ease-in infinite;
+			}
